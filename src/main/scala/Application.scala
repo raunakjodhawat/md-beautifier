@@ -34,7 +34,6 @@ object Application extends ZIOAppDefault {
               "UTF-8"
             )
             .replace("+", "%20")
-          println(s"this is the winning quote: ${quote.toString}")
           Response.seeOther(
             s"https://img.shields.io/badge/$author-$text-green"
           )
